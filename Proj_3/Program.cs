@@ -183,7 +183,7 @@
 // 17. По двум заданным числам проверять является ли одно квадратом другого
 // 18. Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 // 19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
-// 20. Задать номер четверти, показать диапазоны для возможных координат
+// **  20. Задать номер четверти, показать диапазоны для возможных координат
 
 //______________________________________________________________
 //11. Дано число из отрезка [10, 99]. Показать наибольшую цифру числа
@@ -381,37 +381,40 @@
 
 // 19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
 
- int namber (int minValue, int maxValue)
-{
-    int name = new Random().Next(minValue,maxValue);
-    return  name;
-}
-int X =  namber (-100,100);
-int namberOne (int minValue, int maxValue)
-{
-    int name = new Random().Next(minValue,maxValue);
-    return  name;
-}
-int Y =  namberOne (-100,100);
-Console.WriteLine($"X = {X} Y = {Y}");
-void rezalt (int x, int y)
-{
-    if (x >0 | y>0)
-    {
-        Console.WriteLine($"Точка находится в {1}-й четверти");
-    }
-    if (x <0 | y<0)
-    {
-        Console.WriteLine($"Точка находится в {3}-й четверти");
-    }
-    if (x >0 | y<0)
-    {
-        Console.WriteLine($"Точка находится в {4}-й четверти");
-    }
-    if (x <0 | y>0)
-    {
-        Console.WriteLine($"Точка находится вo {2}-й четверти");
-    }
-}
+//  int namber (int minValue, int maxValue)
+// {
+//     int name = new Random().Next(minValue,maxValue);
+//     return  name;
+// }
+// int X =  namber (-100,100);
+// int namberOne (int minValue, int maxValue)
+// {
+//     int name = new Random().Next(minValue,maxValue);
+//     return  name;
+// }
+// int Y =  namberOne (-100,100);
+// Console.WriteLine($"X = {X} Y = {Y}");
+// void rezalt (int x, int y)
+// {
+//     if (x >0 && y>0)
+//     {
+//         Console.WriteLine($"Точка находится в {1}-й четверти");
+//     }
+//     if (x <0 && y<0)
+//     {
+//         Console.WriteLine($"Точка находится в {3}-й четверти");
+//     }
+//     if (x >0 && y<0)
+//     {
+//         Console.WriteLine($"Точка находится в {4}-й четверти");
+//     }
+//     if (x <0 && y>0)
+//     {
+//         Console.WriteLine($"Точка находится вo {2}-й четверти");
+//     }
+// }
+// rezalt(X,Y);
+//_______________________________________________________________
 
-rezalt(X,Y);
+// 20. Задать номер четверти, показать диапазоны для возможных координат
+
