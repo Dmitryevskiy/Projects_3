@@ -109,26 +109,63 @@
 // 28. Подсчитать сумму цифр в числе
 // 30. Показать кубы чисел, заканчивающихся на четную цифру
 
-void number (int  a)
+// void number (int  a)
+// {
+// int c = a;
+// int count = 0;
+// int summa = 0;
+// int work = 1;
+// int cube = 0;
+//     while (a!=0)
+//     {
+//         summa = (a%10)+ summa;
+//             if ( a%2==0) 
+//             {
+//                 cube=a%10;
+//                 cube =  cube* cube * cube;
+//                 Console.WriteLine ($"{a%10} в кубе = {cube}");
+//             }
+//         work = (a%10) * work;
+//         a = a/10;
+//         count ++;
+//     }
+// Console.WriteLine ($" Колличество цифр в числе {c} = {count} Сумма чисел = {summa} Произведение чисел = {work}");
+// }
+// number (135727);
+
+
+int[] array (int number)
 {
-int c = a;
-int count = 0;
-int summa = 0;
-int work = 1;
-int cube = 0;
-    while (a!=0)
+    return new int [number];
+} 
+int[] arr (int[] array, int min, int max)
+{
+    for (int i = 0; i < array.Length; i++)
     {
-        summa = (a%10)+ summa;
-            if ( a%2==0) 
-            {
-                cube=a%10;
-                cube =  cube* cube * cube;
-                Console.WriteLine ($"{a%10} в кубе = {cube}");
-            }
-        work = (a%10) * work;
-        a = a/10;
-        count ++;
+        array[i] = new Random().Next (0,10);
     }
-Console.WriteLine ($" Колличество цифр в числе {c} = {count} Сумма чисел = {summa} Произведение чисел = {work}");
+return array;
 }
-number (135727);
+string print (int[] array)
+{
+    string numbers = String.Empty;
+        for (int i = 0; i < array.Length; i++)
+        {
+            numbers = numbers+$"{array[i]} ";
+        }
+return numbers;
+}
+int[] b = array(12);
+arr(b,0,12);
+Console.WriteLine(print(b));
+string sum (int[] c) 
+{
+    string rez = String.Empty;
+        for (int i = 0; i < b.Length+1; i++)
+        {
+        int rezult = b[i] + b[i++];
+        rez = rez+$"{rezult} ";
+        }
+    return rez;
+}
+Console.WriteLine(sum(b));
